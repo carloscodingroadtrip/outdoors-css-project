@@ -45,6 +45,7 @@ body {
 .heading-primary {
 	color: #fff;
 	text-transform: uppercase;
+	margin-bottom: 60px;
 }
 .heading-main {
 	display: block;
@@ -69,6 +70,7 @@ body {
 	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 @keyframes moveInLeft {
@@ -100,4 +102,28 @@ body {
 		opacity: 1;
 		transform: translate(0);
 	}
+}
+/* Pseudo classes */
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px 40px;
+	border-radius: 100px;
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+	background-color: #fff;
+	color: #777;
 }
