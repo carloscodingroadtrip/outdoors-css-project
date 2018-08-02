@@ -6,3 +6,62 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/* Universal reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: rgb(173, 173, 173);
+	/* padding: 20px; */
+}
+/* vh stands for viewport height */
+.header {
+	height: 95vh;
+	background-image: linear-gradient(to right bottom, #7ed56f81, #28b485), url(../img/hero.jpg);
+	background-size: cover;
+	background-position: top;
+	clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+	position: relative;
+}
+
+.logo-box {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.logo {
+	height: 35px;
+}
+
+.heading-primary {
+	color: #fff;
+	text-transform: uppercase;
+}
+.heading-main {
+	display: block;
+	font-size: 60px;
+	font-weight: 400;
+	letter-spacing: 51px;
+}
+.heading-sub {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 23px;
+}
+
+.text-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
