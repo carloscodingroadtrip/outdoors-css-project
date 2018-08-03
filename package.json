@@ -1,23 +1,23 @@
 {
-  "name": "outdoors-css-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/molinacarlosdev/outdoors-css-project.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/molinacarlosdev/outdoors-css-project/issues"
-  },
-  "homepage": "https://github.com/molinacarlosdev/outdoors-css-project#readme",
-  "devDependencies": {
-    "node-sass": "^4.9.2"
-  }
+	"name": "outdoors-css-project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.css -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/molinacarlosdev/outdoors-css-project.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/molinacarlosdev/outdoors-css-project/issues"
+	},
+	"homepage": "https://github.com/molinacarlosdev/outdoors-css-project#readme",
+	"devDependencies": {
+		"node-sass": "^4.9.2"
+	}
 }
