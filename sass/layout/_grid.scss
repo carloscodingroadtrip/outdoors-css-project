@@ -16,7 +16,7 @@
 	// $ this means any class that ends with "col-"
 	// * this means any class which contains with "col-"
 	[class^='col-'] {
-		background-color: orangered;
+		// background-color: orangered;
 		float: left;
 
 		&:not(:last-child) {
