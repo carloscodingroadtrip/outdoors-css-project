@@ -3,11 +3,10 @@
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	position: relative;
-	height: 50rem;
+	height: 52rem;
 
 	&__side {
-		background-color: orangered;
-		height: 50rem;
+		height: 52rem;
 		transition: all 0.8s ease;
 		position: absolute;
 		top: 0;
@@ -15,6 +14,7 @@
 		width: 100%;
 		backface-visibility: hidden;
 		border-radius: 4px;
+		overflow: hidden;
 		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.16);
 
 		&--front {
@@ -43,6 +43,8 @@
 	&__picture {
 		background-size: cover;
 		height: 23rem;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
 		&--1 {
 			background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
@@ -56,6 +58,50 @@
 
 		&--3 {
 			background-image: url(../img/nat-7.jpg);
+		}
+	}
+
+	&__heading {
+		position: absolute;
+		top: 12rem;
+		right: 2rem;
+		width: 65%;
+		text-align: right;
+		font-size: 2.8rem;
+		color: $color-white;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	&__heading_span {
+		padding: 1rem 1.5rem;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		&--1 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-secondary-light, 0.9),
+				rgba($color-secondary-dark, 0.5)
+			);
+		}
+	}
+
+	&__details {
+		padding: 3rem;
+		ul {
+			list-style: none;
+			width: 80%;
+			margin: 0 auto;
+
+			li {
+				text-align: center;
+				font-size: 1.5rem;
+				padding: 1rem;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid $color-grey-light-2;
+				}
+			}
 		}
 	}
 }
